@@ -139,6 +139,6 @@ class UploadAction extends Action
             throw new InvalidConfigException('"' . get_class($this) . '::beforeStoreCallBack" should be a valid callback.');
         }
 
-        return $this->beforeStoreCallBack?call_user_func($this->successCallback,$file):true;
+        return $this->beforeStoreCallBack?call_user_func($this->beforeStoreCallBack,$file):true;
     }
 }
