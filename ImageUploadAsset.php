@@ -4,7 +4,7 @@ namespace troy\ImageUpload;
 use yii\web\AssetBundle;
 class ImageUploadAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/troy/yii2-image-upload/assets';
+    public $sourcePath = '@vendor/jurenka/yii2-image-upload/assets';
     public $js = [
         'ajaxUpload.js',
     ];
